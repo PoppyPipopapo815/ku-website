@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kupal University — Official Community Site</title>
+<link rel="icon" href="assets/img/ku-seal-small.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="intro" aria-hidden="true">
+  <img class="in-seal" src="assets/img/ku-seal-small.png" alt="">
+  <span class="in-line"></span>
+  <span class="in-txt">Kupal University</span>
+</div>
+<div id="bar"></div>
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="assets/img/ku-seal-small.png" alt="Kupal University seal">
+      <span><b>Kupal University</b><small>Unibersidad ng mga Kupal</small></span>
+    </div>
+    <div class="nav-right">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="t-about" aria-controls="p-about" aria-selected="true">About KU</button>
+        <button class="tab" role="tab" id="t-officers" aria-controls="p-officers" aria-selected="false">Officers</button>
+        <button class="tab" role="tab" id="t-handbook" aria-controls="p-handbook" aria-selected="false">Handbook</button>
+        <button class="tab" role="tab" id="t-gallery" aria-controls="p-gallery" aria-selected="false">Gallery</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="panel on" id="p-about" role="tabpanel" aria-labelledby="t-about">
+    <div class="hero row align-items-center g-4">
+      <div class="col-12 col-lg-6">
+        <span class="kicker">Filipino Roblox Community · Est. December 11, 2024</span>
+        <h1><span class="w">Kupal</span> <span class="w"><em>University</em></span></h1>
+        <p class="motto">Kindness · Friendship · Community</p>
+        <p class="lead">Yes, the name is rude. No, we're not. Kupal University is a Filipino Roblox community that runs on bad jokes and good people — the kind of place where you get roasted for your fit check and then invited to the next hangout thirty seconds later.</p>
+        <div class="cta">
+          <a class="btn btn-gold" href="https://discord.gg/cxP93ZuxP" target="_blank" rel="noopener">Join us</a>
+          <button class="btn btn-line" data-go="officers">Meet the council</button>
+        </div>
+        <div class="cue" aria-hidden="true"><i></i>Scroll for the handbook</div>
+      </div>
+      <div class="stage col-12 col-lg-6">
+        <span class="orbit o3"></span>
+        <span class="orbit o2"><span class="dot"></span></span>
+        <span class="orbit o1"><span class="dot"></span></span>
+        <img class="seal-img" src="assets/img/ku-seal.png" alt="Kupal University official seal">
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true"><div class="track">
+      <span>Bastos ang pangalan, mabait ang tao</span><span>483 members</span><span>Unibersidad ng mga Kupal</span><span>Walang iwanan</span><span>Since 2024</span>
+      <span>Bastos ang pangalan, mabait ang tao</span><span>483 members</span><span>Unibersidad ng mga Kupal</span><span>Walang iwanan</span><span>Since 2024</span>
+    </div></div>
+
+    <div class="stats row g-2 g-md-3">
+      <div class="stat col-6 col-lg-3" data-reveal><b data-count="483">0</b><span>Members</span></div>
+      <div class="stat col-6 col-lg-3" data-reveal><b data-count="26">0</b><span>Server boosts</span></div>
+      <div class="stat col-6 col-lg-3" data-reveal><b data-count="85" data-suffix="+">0</b><span>Online daily</span></div>
+      <div class="stat col-6 col-lg-3" data-reveal><b data-count="5">0</b><span>Council seats</span></div>
+    </div>
+
+    <div class="handbook row g-4">
+      <div class="hb-side col-12 col-lg-5">
+        <span class="kicker">House Rules · Short Version</span>
+        <h2>Four rules, <em>zero</em> tuition.</h2>
+        <p>We founded this place on December 11, 2024 with one bad name and one good idea. Everything since then has followed the same four rules — the full student handbook spells out the rest.</p>
+        <button class="btn btn-line" data-go="handbook" style="margin-top:1.3rem">Read the handbook</button>
+        <span class="orn" style="margin-left:0" aria-hidden="true"></span>
+      </div>
+      <div class="rules col-12 col-lg-7">
+        <div class="rule" data-reveal><span class="n">01</span><div><h3>Be kupal, not cruel</h3><p>Roast your friends all you want. The second it stops being funny for the person on the receiving end, it stops. That's the entire line, and we hold it.</p></div></div>
+        <div class="rule" data-reveal><span class="n">02</span><div><h3>Nobody plays alone</h3><p>Summits, hangouts, obbies, late-night lobbies. If you post "sino laro," someone answers. If you're new, someone drags you into the group photo.</p></div></div>
+        <div class="rule" data-reveal><span class="n">03</span><div><h3>Show up as yourself</h3><p>No auditions, no clout check, no minimum level. Come in your worst avatar and your best mood — or the other way around, we don't mind.</p></div></div>
+        <div class="rule" data-reveal><span class="n">04</span><div><h3>Receipts stay public</h3><p>Five officers run the events, the funds, and the records. Every decision gets written down, checked, and posted where members can see it.</p></div></div>
+      </div>
+    </div>
+
+    <div class="ticket-wrap" data-reveal>
+      <div class="ticket">
+        <div class="t-body">
+          <span class="t-eyebrow">Office of Admissions · Form KU-01</span>
+          <h2>Admission slip</h2>
+          <p class="t-note">This is the whole application. There is no essay, no entrance exam, and no interview — MuuKU tried to add one and got voted down 4 to 1.</p>
+          <dl class="t-fields">
+            <div><dt>Applicant</dt><dd>You, apparently</dd></div>
+            <div><dt>Requirements</dt><dd>A pulse and decent manners</dd></div>
+            <div><dt>Tuition</dt><dd>₱0.00 forever</dd></div>
+            <div><dt>Status</dt><dd class="ok">Accepted</dd></div>
+          </dl>
+          <div class="t-sign">
+            <span class="sig">MuuKU</span>
+            <span class="sig-label">President · Kupal University</span>
+          </div>
+          <span class="stamp" aria-hidden="true"><b>Admitted</b><i>Est. 2024</i></span>
+        </div>
+        <div class="t-perf" aria-hidden="true"></div>
+        <div class="t-stub">
+          <img src="assets/img/ku-seal-small.png" alt="">
+          <span class="stub-big">Admit<br>One</span>
+          <span class="stub-no">KU · 484</span>
+          <span class="stub-fine">Use the Join us button up top</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="p-officers" role="tabpanel" aria-labelledby="t-officers">
+    <div class="head">
+      <span class="kicker">The Council · Term 2024–</span>
+      <h2>Office of the <em>Council</em></h2>
+      <p>Five officers, five ID cards. The people behind every event, every announcement, and most of the bad decisions — listed by rank.</p>
+      <span class="orn" aria-hidden="true"></span>
+    </div>
+    <div class="term-band" data-reveal>
+      <span><b>5</b>officers</span><span><b>1</b>council</span><span><b>2024</b>term start</span><span><b>483</b>students served</span>
+    </div>
+    <div class="roster">
+      <div class="tier row justify-content-center g-3"><div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"><article class="id" data-tilt data-reveal>
+      <div class="id-strip"><img src="assets/img/ku-seal-small.png" alt=""><span>Kupal University · Council</span><span class="id-no">KU-2024-001</span></div>
+      <div class="id-main">
+        <div class="id-photo"><img src="assets/img/ku-officer-01.jpg" alt="MuuKU's avatar" width="480" height="600" loading="lazy" decoding="async"></div>
+        <span class="id-label">Position</span>
+        <p class="id-role">President</p>
+        <div class="id-idents">
+          <div><span class="id-label">In-game name</span><h3>MuuKU</h3></div>
+          <div><span class="id-label">Roblox username</span><p class="id-user">SushiSwagger</p></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div><span class="shine" aria-hidden="true"></span></article></div></div>
+      <span class="drop" aria-hidden="true"></span>
+      <div class="tier row justify-content-center g-3"><div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"><article class="id" data-tilt data-reveal>
+      <div class="id-strip"><img src="assets/img/ku-seal-small.png" alt=""><span>Kupal University · Council</span><span class="id-no">KU-2024-002</span></div>
+      <div class="id-main">
+        <div class="id-photo"><img src="assets/img/ku-officer-02.jpg" alt="ZinKU's avatar" width="480" height="600" loading="lazy" decoding="async"></div>
+        <span class="id-label">Position</span>
+        <p class="id-role">Vice President</p>
+        <div class="id-idents">
+          <div><span class="id-label">In-game name</span><h3>ZinKU</h3></div>
+          <div><span class="id-label">Roblox username</span><p class="id-user">Jaypsu1</p></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div><span class="shine" aria-hidden="true"></span></article></div></div>
+      <span class="drop" aria-hidden="true"></span>
+      <div class="branch" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="tier tier--three row justify-content-center g-3"><div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"><article class="id" data-tilt data-reveal>
+      <div class="id-strip"><img src="assets/img/ku-seal-small.png" alt=""><span>Kupal University · Council</span><span class="id-no">KU-2024-003</span></div>
+      <div class="id-main">
+        <div class="id-photo"><img src="assets/img/ku-officer-03.jpg" alt="SnowKU's avatar" width="480" height="600" loading="lazy" decoding="async"></div>
+        <span class="id-label">Position</span>
+        <p class="id-role">Treasurer</p>
+        <div class="id-idents">
+          <div><span class="id-label">In-game name</span><h3>SnowKU</h3></div>
+          <div><span class="id-label">Roblox username</span><p class="id-user">xieyurii</p></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div><span class="shine" aria-hidden="true"></span></article></div><div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"><article class="id" data-tilt data-reveal>
+      <div class="id-strip"><img src="assets/img/ku-seal-small.png" alt=""><span>Kupal University · Council</span><span class="id-no">KU-2024-004</span></div>
+      <div class="id-main">
+        <div class="id-photo"><img src="assets/img/ku-officer-04.jpg" alt="AyaKU's avatar" width="480" height="600" loading="lazy" decoding="async"></div>
+        <span class="id-label">Position</span>
+        <p class="id-role">Auditor</p>
+        <div class="id-idents">
+          <div><span class="id-label">In-game name</span><h3>AyaKU</h3></div>
+          <div><span class="id-label">Roblox username</span><p class="id-user">Goldyy_Laxx109</p></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div><span class="shine" aria-hidden="true"></span></article></div><div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center"><article class="id" data-tilt data-reveal>
+      <div class="id-strip"><img src="assets/img/ku-seal-small.png" alt=""><span>Kupal University · Council</span><span class="id-no">KU-2024-005</span></div>
+      <div class="id-main">
+        <div class="id-photo"><img src="assets/img/ku-officer-05.jpg" alt="CaseyKU's avatar" width="480" height="600" loading="lazy" decoding="async"></div>
+        <span class="id-label">Position</span>
+        <p class="id-role">Secretary</p>
+        <div class="id-idents">
+          <div><span class="id-label">In-game name</span><h3>CaseyKU</h3></div>
+          <div><span class="id-label">Roblox username</span><p class="id-user">LazyBeambagg</p></div>
+        </div>
+        <div class="barcode" aria-hidden="true"></div>
+      </div><span class="shine" aria-hidden="true"></span></article></div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="p-handbook" role="tabpanel" aria-labelledby="t-handbook">
+    <div class="doc-cover" data-reveal>
+      <div>
+        <span class="kicker">Student Handbook · Revision 2026</span>
+        <h2>Courtesy, honesty,<br><em>social responsibility.</em></h2>
+        <p>Discipline is what keeps this place peaceful. Eleven sections, written down so nobody has to guess where the line is.</p>
+      </div>
+      <div class="doc-meta">
+        <div><dt>Issued by</dt><dd>Student Council</dd></div>
+        <div><dt>Status</dt><dd class="live">In force</dd></div>
+        <div><dt>Applies to</dt><dd>All 483 members</dd></div>
+      </div>
+    </div>
+
+    <div class="reader row g-4">
+      <aside class="reader-side col-12 col-lg-3">
+        <label class="doc-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input type="search" id="rq" placeholder="Search rules" autocomplete="off">
+        </label>
+        <span class="hits" id="rhits"></span>
+        <nav class="doc-tabs" aria-label="Handbook sections">
+          <button class="doc-tab act" data-go-sec="01"><span>01</span><b>Student Discipline</b></button><button class="doc-tab" data-go-sec="02"><span>02</span><b>General Rules</b></button><button class="doc-tab" data-go-sec="03"><span>03</span><b>Chat Etiquette</b></button><button class="doc-tab" data-go-sec="04"><span>04</span><b>Voice Channel Etiquette</b></button><button class="doc-tab" data-go-sec="05"><span>05</span><b>Screenshare Etiquette</b></button><button class="doc-tab" data-go-sec="06"><span>06</span><b>Student Profiles</b></button><button class="doc-tab" data-go-sec="07"><span>07</span><b>Bot Etiquette</b></button><button class="doc-tab" data-go-sec="08"><span>08</span><b>Ban Rules</b></button><button class="doc-tab" data-go-sec="09"><span>09</span><b>Privacy Protection</b></button>
+          <button class="doc-tab" data-go-sec="10"><span>10</span><b>Infractions</b></button>
+          <button class="doc-tab" data-go-sec="11"><span>11</span><b>Reporting</b></button>
+        </nav>
+      </aside>
+
+      <div class="reader-main col-12 col-lg-9">
+        <div class="reader-stage" id="stageDocs">
+          <article class="doc on" id="sec-01" data-sec="01">
+      <div class="doc-top"><span class="doc-label">Preamble</span><h3>Student Discipline</h3><span class="doc-count">1 statement</span></div>
+      <p class="doc-lead">Exercising discipline is vital to maintaining peace and stability at Kupal University. This clan highly values courtesy, honesty, and social responsibility. The student council expects students to uphold these values and to conduct themselves in a manner that conforms to this handbook.</p>
+    </article>
+<article class="doc" id="sec-02" data-sec="02">
+      <div class="doc-top"><span class="doc-label">Section 2</span><h3>General Rules</h3><span class="doc-count">9 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 2.1" title="Copy rule code">SC. 2.1</button><div class="doc-text"><p>Read and comply with the Discord Terms of Service and Community Guidelines.</p></div></div><div class="doc-rule is-zt"><button class="doc-code" data-code="SC. 2.2" title="Copy rule code">SC. 2.2</button><div class="doc-text"><p>Any kind of harassment, remarks, or threats against any individual will not be tolerated.<span class="zt">Zero tolerance</span></p><div class="doc-tags"><span>No harassment</span><span>No sexual harassment</span><span>No bullying</span><span>No homophobia</span><span>No pedophilia</span><span>No personal attacks</span><span>No discrimination</span><span>No defamation</span><span>No grave threats</span></div></div></div><div class="doc-rule is-zt"><button class="doc-code" data-code="SC. 2.3" title="Copy rule code">SC. 2.3</button><div class="doc-text"><p>Doxxing and distribution of personal information without consent is strictly prohibited.<span class="zt">Zero tolerance</span></p><div class="doc-tags"><span>Real names</span><span>Addresses</span><span>Emails</span><span>Passwords</span><span>Bank or credit card information</span><span>Real pictures</span></div></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.4" title="Copy rule code">SC. 2.4</button><div class="doc-text"><p>Mark NSFW media content as a spoiler.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.5" title="Copy rule code">SC. 2.5</button><div class="doc-text"><p>No engaging in disruptive behavior.</p><div class="doc-note"><span>Note</span><p>If students are harassed by people outside the clan, they may defend themselves — as long as the other party instigated the fight.</p></div></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.6" title="Copy rule code">SC. 2.6</button><div class="doc-text"><p>Raiding servers is not allowed.</p><div class="doc-note"><span>Note</span><p>Encouraging or inviting server raiders results in an immediate ban.</p></div></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.7" title="Copy rule code">SC. 2.7</button><div class="doc-text"><p>Instigating drama is not allowed.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.8" title="Copy rule code">SC. 2.8</button><div class="doc-text"><p>Posting advertisements or promotions without permission is discouraged. Scamming is strictly prohibited.</p><div class="doc-note"><span>Note</span><p>Consult the student council through DMs or the designated channel if you wish to post an advertisement or promotion.</p></div></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 2.9" title="Copy rule code">SC. 2.9</button><div class="doc-text"><p>The student council reserves the right to delete or edit messages that do not comply with the rules.</p></div></div></div>
+    </article>
+<article class="doc" id="sec-03" data-sec="03">
+      <div class="doc-top"><span class="doc-label">Section 3</span><h3>Chat Etiquette</h3><span class="doc-count">5 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 3.1" title="Copy rule code">SC. 3.1</button><div class="doc-text"><p>No excessive @everyone pings, especially when unnecessary.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 3.2" title="Copy rule code">SC. 3.2</button><div class="doc-text"><p>Use the appropriate channels when taking part in discussions.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 3.3" title="Copy rule code">SC. 3.3</button><div class="doc-text"><p>Communicate respectfully with members.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 3.4" title="Copy rule code">SC. 3.4</button><div class="doc-text"><p>Use appropriate spoiler tags in discussions.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 3.5" title="Copy rule code">SC. 3.5</button><div class="doc-text"><p>Spreading misinformation is strictly prohibited.</p></div></div></div>
+    </article>
+<article class="doc" id="sec-04" data-sec="04">
+      <div class="doc-top"><span class="doc-label">Section 4</span><h3>Voice Channel Etiquette</h3><span class="doc-count">1 rule</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 4.1" title="Copy rule code">SC. 4.1</button><div class="doc-text"><p>The student council reserves the right to deafen, disconnect, or mute you if students are bothered by your behavior.</p><div class="doc-note"><span>Note</span><p>If you want a private conversation, make sure the VC is either locked or hidden.</p></div></div></div></div>
+    </article>
+<article class="doc" id="sec-05" data-sec="05">
+      <div class="doc-top"><span class="doc-label">Section 5</span><h3>Screenshare Etiquette</h3><span class="doc-count">1 rule</span></div>
+      <div class="doc-rules"><div class="doc-rule is-zt"><button class="doc-code" data-code="SC. 5.1" title="Copy rule code">SC. 5.1</button><div class="doc-text"><p>Streaming NSFW, illegal, or offensive content in public VCs is strictly prohibited.<span class="zt">Zero tolerance</span></p><div class="doc-note"><span>Note</span><p>If you wish to stream this type of content, make sure the VC is either locked or hidden.</p></div></div></div></div>
+    </article>
+<article class="doc" id="sec-06" data-sec="06">
+      <div class="doc-top"><span class="doc-label">Section 6</span><h3>Student Profiles</h3><span class="doc-count">3 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 6.1" title="Copy rule code">SC. 6.1</button><div class="doc-text"><p>No blank nicknames.</p></div></div><div class="doc-rule is-zt"><button class="doc-code" data-code="SC. 6.2" title="Copy rule code">SC. 6.2</button><div class="doc-text"><p>Impersonation or identity theft is strictly prohibited.<span class="zt">Zero tolerance</span></p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 6.3" title="Copy rule code">SC. 6.3</button><div class="doc-text"><p>The student council reserves the right to change your nickname if it is deemed inappropriate or offensive.</p></div></div></div>
+    </article>
+<article class="doc" id="sec-07" data-sec="07">
+      <div class="doc-top"><span class="doc-label">Section 7</span><h3>Bot Etiquette</h3><span class="doc-count">2 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 7.1" title="Copy rule code">SC. 7.1</button><div class="doc-text"><p>Inviting third-party bots is not allowed.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 7.2" title="Copy rule code">SC. 7.2</button><div class="doc-text"><p>Avoid adding, deleting, or modifying bot commands without permission.</p></div></div></div>
+    </article>
+<article class="doc" id="sec-08" data-sec="08">
+      <div class="doc-top"><span class="doc-label">Section 8</span><h3>Ban Rules</h3><span class="doc-count">2 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 8.1" title="Copy rule code">SC. 8.1</button><div class="doc-text"><p>Refrain from harassing the student council in DMs to appeal a ban or kick.</p></div></div><div class="doc-rule is-zt"><button class="doc-code" data-code="SC. 8.2" title="Copy rule code">SC. 8.2</button><div class="doc-text"><p>Ban or kick evasion through alternate accounts is strictly prohibited.<span class="zt">Zero tolerance</span></p></div></div></div>
+    </article>
+<article class="doc" id="sec-09" data-sec="09">
+      <div class="doc-top"><span class="doc-label">Section 9</span><h3>Privacy Protection</h3><span class="doc-count">2 rules</span></div>
+      <div class="doc-rules"><div class="doc-rule"><button class="doc-code" data-code="SC. 9.1" title="Copy rule code">SC. 9.1</button><div class="doc-text"><p>Refrain from sharing personal and sensitive details with students.</p></div></div><div class="doc-rule"><button class="doc-code" data-code="SC. 9.2" title="Copy rule code">SC. 9.2</button><div class="doc-text"><p>Refrain from asking students for personal and sensitive information.</p></div></div></div>
+    </article>
+
+          <article class="doc" id="sec-10" data-sec="10">
+            <div class="doc-top"><span class="doc-label">Disciplinary Sanctions</span><h3>Infractions</h3><span class="doc-count">3 tiers</span></div>
+            <p class="doc-lead">The penalty for each offense depends on the nature and gravity of the violation. Any of the following, or a combination, may be imposed.</p>
+            <div class="sancs"><div class="sanc"><h4>First-time or minor infractions<b>3-day time out</b></h4><p>A warning is issued along with a temporary 3-day time out, reminding the student of the relevant rules.</p></div><div class="sanc"><h4>Repeated violations<b>1-week time out</b></h4><p>A warning is issued along with a temporary 1-week time out, again citing the relevant rules.</p></div><div class="sanc"><h4>Severe infractions<b>Permanent</b></h4><p>Immediate removal from Kupal University, to safeguard the community's reputation and well-being.</p></div></div>
+            <div class="doc-note"><span>Note</span><p>A time out temporarily suspends privileges, including posting and taking part in any discussion.</p></div>
+          </article>
+
+          <article class="doc" id="sec-11" data-sec="11">
+            <div class="doc-top"><span class="doc-label">Disciplinary Cases</span><h3>Reporting</h3><span class="doc-count">3 steps</span></div>
+            <p class="doc-lead">Suspect someone broke a rule? Here's how it gets handled.</p>
+            <ol class="doc-steps"><li>Report a suspected violation to the student council through DMs or the designated reporting channel.</li><li>Submit authentic evidence to support your claim. False accusations are not tolerated and result in an immediate ban.</li><li>Give the council time to investigate and deliberate before deciding what action to take.</li></ol>
+          </article>
+        </div>
+
+        <div class="doc-nav">
+          <button id="docPrev" class="doc-move">← Previous</button>
+          <span id="docPos" class="doc-pos">01 / 11</span>
+          <button id="docNext" class="doc-move">Next →</button>
+        </div>
+        <div class="reader-foot">
+          <span class="sign"><i>MuuKU</i><small>President · Student Council</small></span>
+          <span class="foot-note">Being here counts as reading it. Ask any officer if something isn't clear.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="p-gallery" role="tabpanel" aria-labelledby="t-gallery">
+    <div class="head">
+      <span class="kicker">Campus Archive</span>
+      <h2>The KU <em>Gallery</em></h2>
+      <p>Trips, summits, themed hangouts, and family photos. Click any photo to open it — then use the arrows to keep going.</p>
+      <span class="orn" aria-hidden="true"></span>
+    </div>
+    <div class="filters" role="group" aria-label="Filter photos">
+      <button class="filt" data-f="all" aria-pressed="true">All</button>
+      <button class="filt" data-f="campus" aria-pressed="false">Campus</button>
+      <button class="filt" data-f="trips" aria-pressed="false">Trips</button>
+      <button class="filt" data-f="events" aria-pressed="false">Events</button>
+      <button class="filt" data-f="fits" aria-pressed="false">Fit checks</button>
+    </div>
+    <p class="grid-count" id="gcount">Showing all 27 photos</p>
+    <div class="row g-3" id="grid"><div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="0" data-tag="trips" data-title="Bird Watching Day" data-sub="Island trip, human tower attempt. Nobody got hurt.">
+        <img src="assets/img/ku-photo-01.jpg" alt="Bird Watching Day" loading="lazy" decoding="async">
+        <figcaption><strong>Bird Watching Day</strong><span>Island trip, human tower attempt. Nobody got hurt.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="1" data-tag="campus" data-title="Class Picture" data-sub="Everyone in uniform, everyone accounted for.">
+        <img src="assets/img/ku-photo-02.jpg" alt="Class Picture" loading="lazy" decoding="async">
+        <figcaption><strong>Class Picture</strong><span>Everyone in uniform, everyone accounted for.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="2" data-tag="campus" data-title="Beach Class Photo" data-sub="Full attendance in uniform. RaphKU posing in the back, as usual.">
+        <img src="assets/img/ku-photo-03.jpg" alt="Beach Class Photo" loading="lazy" decoding="async">
+        <figcaption><strong>Beach Class Photo</strong><span>Full attendance in uniform. RaphKU posing in the back, as usual.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="3" data-tag="campus" data-title="Rainy Night Hangout" data-sub="Downpour outside, full squad inside.">
+        <img src="assets/img/ku-photo-04.jpg" alt="Rainy Night Hangout" loading="lazy" decoding="async">
+        <figcaption><strong>Rainy Night Hangout</strong><span>Downpour outside, full squad inside.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="4" data-tag="events" data-title="New Year 2026" data-sub="Bleachers packed while we waited for midnight.">
+        <img src="assets/img/ku-photo-05.jpg" alt="New Year 2026" loading="lazy" decoding="async">
+        <figcaption><strong>New Year 2026</strong><span>Bleachers packed while we waited for midnight.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="5" data-tag="fits" data-title="Axolotl Era" data-sub="Different colours, same species.">
+        <img src="assets/img/ku-photo-06.jpg" alt="Axolotl Era" loading="lazy" decoding="async">
+        <figcaption><strong>Axolotl Era</strong><span>Different colours, same species.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="6" data-tag="fits" data-title="Violet Night" data-sub="Themed fit check, purple edition.">
+        <img src="assets/img/ku-photo-07.jpg" alt="Violet Night" loading="lazy" decoding="async">
+        <figcaption><strong>Violet Night</strong><span>Themed fit check, purple edition.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="7" data-tag="events" data-title="KU On Top" data-sub="Grinding levels together at Palmira.">
+        <img src="assets/img/ku-photo-08.jpg" alt="KU On Top" loading="lazy" decoding="async">
+        <figcaption><strong>KU On Top</strong><span>Grinding levels together at Palmira.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="8" data-tag="campus" data-title="Campus Uniforms" data-sub="kaceKU and MuuKU in official KU colours.">
+        <img src="assets/img/ku-photo-09.jpg" alt="Campus Uniforms" loading="lazy" decoding="async">
+        <figcaption><strong>Campus Uniforms</strong><span>kaceKU and MuuKU in official KU colours.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="9" data-tag="trips" data-title="Frozen Summit" data-sub="First summit for MuuKU and yuriKU.">
+        <img src="assets/img/ku-photo-10.jpg" alt="Frozen Summit" loading="lazy" decoding="async">
+        <figcaption><strong>Frozen Summit</strong><span>First summit for MuuKU and yuriKU.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="10" data-tag="trips" data-title="Mount Lonely" data-sub="500 summits, and not lonely at all.">
+        <img src="assets/img/ku-photo-11.jpg" alt="Mount Lonely" loading="lazy" decoding="async">
+        <figcaption><strong>Mount Lonely</strong><span>500 summits, and not lonely at all.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="11" data-tag="trips" data-title="Base Camp" data-sub="Resting before the next climb.">
+        <img src="assets/img/ku-photo-12.jpg" alt="Base Camp" loading="lazy" decoding="async">
+        <figcaption><strong>Base Camp</strong><span>Resting before the next climb.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="12" data-tag="fits" data-title="Blackout Fit Check" data-sub="Matching black fits, kenethKU to SassyKU.">
+        <img src="assets/img/ku-photo-13.jpg" alt="Blackout Fit Check" loading="lazy" decoding="async">
+        <figcaption><strong>Blackout Fit Check</strong><span>Matching black fits, kenethKU to SassyKU.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="13" data-tag="events" data-title="Mount Kun Concert" data-sub="Front row at the night show, everyone summited first.">
+        <img src="assets/img/ku-photo-14.jpg" alt="Mount Kun Concert" loading="lazy" decoding="async">
+        <figcaption><strong>Mount Kun Concert</strong><span>Front row at the night show, everyone summited first.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="14" data-tag="campus" data-title="Palmira Nursery" data-sub="eliKU on babysitting duty while the squad grinds levels.">
+        <img src="assets/img/ku-photo-15.jpg" alt="Palmira Nursery" loading="lazy" decoding="async">
+        <figcaption><strong>Palmira Nursery</strong><span>eliKU on babysitting duty while the squad grinds levels.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="15" data-tag="campus" data-title="Luzon or Mindanao" data-sub="Region roll call in the middle of the lobby.">
+        <img src="assets/img/ku-photo-16.jpg" alt="Luzon or Mindanao" loading="lazy" decoding="async">
+        <figcaption><strong>Luzon or Mindanao</strong><span>Region roll call in the middle of the lobby.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="16" data-tag="fits" data-title="Beach Day" data-sub="Matching shorts, unmatched confidence.">
+        <img src="assets/img/ku-photo-17.jpg" alt="Beach Day" loading="lazy" decoding="async">
+        <figcaption><strong>Beach Day</strong><span>Matching shorts, unmatched confidence.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="17" data-tag="events" data-title="KU On Top — Palmira" data-sub="Signs up, KU on top, as always.">
+        <img src="assets/img/ku-photo-18.jpg" alt="KU On Top — Palmira" loading="lazy" decoding="async">
+        <figcaption><strong>KU On Top — Palmira</strong><span>Signs up, KU on top, as always.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="18" data-tag="fits" data-title="Therapy Center Rock" data-sub="Blue-and-white fits, everyone claiming the same boulder.">
+        <img src="assets/img/ku-photo-19.jpg" alt="Therapy Center Rock" loading="lazy" decoding="async">
+        <figcaption><strong>Therapy Center Rock</strong><span>Blue-and-white fits, everyone claiming the same boulder.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="19" data-tag="fits" data-title="Pink Hour" data-sub="Cheer squad energy under a pink sky.">
+        <img src="assets/img/ku-photo-20.jpg" alt="Pink Hour" loading="lazy" decoding="async">
+        <figcaption><strong>Pink Hour</strong><span>Cheer squad energy under a pink sky.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="20" data-tag="campus" data-title="Beachfront Hangout" data-sub="aliKU, chaeKU, GabbKU and twizzyKU killing time by the shore.">
+        <img src="assets/img/ku-photo-21.jpg" alt="Beachfront Hangout" loading="lazy" decoding="async">
+        <figcaption><strong>Beachfront Hangout</strong><span>aliKU, chaeKU, GabbKU and twizzyKU killing time by the shore.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="21" data-tag="events" data-title="Sunset Ceremony" data-sub="Full seating at the boardwalk, PEACE spelled out behind us.">
+        <img src="assets/img/ku-photo-22.jpg" alt="Sunset Ceremony" loading="lazy" decoding="async">
+        <figcaption><strong>Sunset Ceremony</strong><span>Full seating at the boardwalk, PEACE spelled out behind us.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="22" data-tag="campus" data-title="Steps Class Photo" data-sub="Whole batch in uniform, no empty seats on the stairs.">
+        <img src="assets/img/ku-photo-23.jpg" alt="Steps Class Photo" loading="lazy" decoding="async">
+        <figcaption><strong>Steps Class Photo</strong><span>Whole batch in uniform, no empty seats on the stairs.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="23" data-tag="fits" data-title="Shades On" data-sub="Matching white fits and sunglasses. No further comment.">
+        <img src="assets/img/ku-photo-24.jpg" alt="Shades On" loading="lazy" decoding="async">
+        <figcaption><strong>Shades On</strong><span>Matching white fits and sunglasses. No further comment.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="24" data-tag="events" data-title="Night Beach Meetup" data-sub="Moon out, bonfire lit, everyone showed up.">
+        <img src="assets/img/ku-photo-25.jpg" alt="Night Beach Meetup" loading="lazy" decoding="async">
+        <figcaption><strong>Night Beach Meetup</strong><span>Moon out, bonfire lit, everyone showed up.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="25" data-tag="campus" data-title="Gusto Ko Biceps" data-sub="A demand was made. It remains unanswered.">
+        <img src="assets/img/ku-photo-26.jpg" alt="Gusto Ko Biceps" loading="lazy" decoding="async">
+        <figcaption><strong>Gusto Ko Biceps</strong><span>A demand was made. It remains unanswered.</span></figcaption>
+      </figure></div>
+<div class="col-12 col-sm-6 col-lg-4">
+      <figure class="frame" tabindex="0" data-reveal data-i="26" data-tag="fits" data-title="Snow Day Bench" data-sub="Winter fits, foggy weather, and the bench claimed by MuuKU's crew.">
+        <img src="assets/img/ku-photo-27.jpg" alt="Snow Day Bench" loading="lazy" decoding="async">
+        <figcaption><strong>Snow Day Bench</strong><span>Winter fits, foggy weather, and the bench claimed by MuuKU's crew.</span></figcaption>
+      </figure></div></div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-l">
+      <img src="assets/img/ku-seal-small.png" alt="Kupal University seal">
+      <span><b>Kupal University</b><small>Est. December 11, 2024</small></span>
+    </div>
+    <nav class="f-nav" aria-label="Footer">
+      <button data-go="about">About</button>
+      <button data-go="officers">Officers</button>
+      <button data-go="handbook">Handbook</button>
+      <button data-go="gallery">Gallery</button>
+    </nav>
+    <span class="f-r">Kindness · Friendship · Community</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="x" id="lbX">Close</button>
+  <button type="button" class="nav prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <button type="button" class="nav next" id="lbNext" aria-label="Next photo">›</button>
+  <img id="lbImg" src="" alt="">
+  <h4 id="lbT"></h4>
+  <p id="lbP"></p>
+  <span class="counter" id="lbC"></span>
+  <div class="strip" id="lbStrip"></div>
+</div>
+
+<button id="top" aria-label="Back to top">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V6M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
